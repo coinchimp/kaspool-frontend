@@ -1,1 +1,1 @@
-# kaspool-frontend
+Example of using prometheus API for charts
