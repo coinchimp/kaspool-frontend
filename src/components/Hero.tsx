@@ -7,19 +7,31 @@ const Hero = () => {
                         Premier Mining Pool for Kaspa
                     </p>
                 </div>
-                <p className="text-6xl font-bold hero-text my-4">
+                <p className="text-6xl font-bold hero-text my-6 md:my-4">
                     Welcome to KasPool
                 </p>
-                <p className="max-w-lg">
+                <p className="max-w-xs md:max-w-lg">
                     Join the most reliable and efficient mining pool dedicated
                     to Kaspa. Kaspool offers you the best mining experience with
                     optimized performance, low fees, and instant payouts.
                     Maximize your earnings and be part of a thriving mining
                     community.
                 </p>
-                <button className="rounded-full bg-[#77c2b6] py-3 mt-6 text-white px-5 hover:bg-opacity-80 transition ease-in-out duration-200">
-                    Search an address
-                </button>
+                <div className="flex items-center mt-6 max-w-xs md:max-w-lg bg-white rounded-full">
+                    <input
+                        type="text"
+                        className="hidden md:inline px-5 py-3 rounded-full w-[65%] text-black outline-none"
+                        placeholder="Please enter your KAS wallet address"
+                    />
+                    <input
+                        type="text"
+                        className="md:hidden px-3 py-3 rounded-full text-black outline-none"
+                        placeholder="Enter your KAS wallet address"
+                    />
+                    <button className="rounded-full bg-[#77c2b6] py-3 text-white px-5 hover:bg-opacity-80 transition ease-in-out duration-200 ml-auto">
+                        Search
+                    </button>
+                </div>
             </div>
         </div>
     )
