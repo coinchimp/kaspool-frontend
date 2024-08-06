@@ -1,4 +1,8 @@
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+
 const Hero = () => {
+    const [walletAdd, setWalletAdd] = useState<string>('')
     return (
         <div className="h-[90vh] bg-[#308274] text-white">
             <div className="px-8 max-w-2xl py-8">
@@ -22,15 +26,19 @@ const Hero = () => {
                         type="text"
                         className="hidden md:inline px-5 py-3 rounded-full w-[65%] text-black outline-none"
                         placeholder="Please enter your KAS wallet address"
+                        onChange={e => setWalletAdd(e.target.value)}
                     />
                     <input
                         type="text"
                         className="md:hidden px-3 py-3 rounded-full text-black outline-none"
                         placeholder="Enter your KAS wallet address"
                     />
-                    <button className="rounded-full bg-[#77c2b6] py-3 text-white px-5 hover:bg-opacity-80 transition ease-in-out duration-200 ml-auto">
+                    <Link
+                        to={`/miner/${walletAdd}/dashboard`}
+                        className="rounded-full bg-[#77c2b6] py-3 text-white px-5 hover:bg-opacity-80 transition ease-in-out duration-200 ml-auto"
+                    >
                         Search
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>

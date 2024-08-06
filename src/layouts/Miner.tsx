@@ -1,5 +1,11 @@
+import { Outlet } from 'react-router-dom'
+
 const Miner = () => {
-    return <div>Miner</div>
+    return (
+        <div>
+            <Outlet />
+        </div>
+    )
 }
 
 export default Miner
