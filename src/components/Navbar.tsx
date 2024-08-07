@@ -24,7 +24,7 @@ const Navbar = () => {
                 <div className="bg-[#65c0b1] mr-2 py-2 px-3 rounded-full">
                     <p className="font-bold text-lg text-white">𐤊P</p>
                 </div>
-                <p className="font-bold text-lg text-[#65c0b1]">KatPOOL</p>
+                <p className="font-bold text-lg text-[#65c0b1]">KasPOOL</p>
             </div>
             <div className="text-sm hidden md:block">
                 <ul className="flex space-x-8">
@@ -60,7 +60,7 @@ const Navbar = () => {
                                 𐤊P
                             </p>
                         </div>
-                        <p className="font-bold text-lg text-white">KatPOOL</p>
+                        <p className="font-bold text-lg text-white">KasPOOL</p>
                     </div>
                     <div className="md:hidden">
                         <IoMdClose
