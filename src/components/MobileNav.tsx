@@ -1,11 +1,19 @@
+import React from 'react'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { IoIosMenu } from 'react-icons/io'
 
-const MobileNav = () => {
+interface MobileNavProps {
+    toogleSidebar: () => void
+}
+
+const MobileNav: React.FC<MobileNavProps> = ({ toogleSidebar }) => {
     return (
-        <div className="md:hidden">
+        <div className="md:hidden h-[60px]">
             <div className="flex items-center justify-between py-2 px-4">
-                <div className="items-center justify-center rounded-md p-2 bg-[#77c2b6] flex">
+                <div
+                    className="items-center justify-center rounded-md p-2 bg-[#77c2b6] flex"
+                    onClick={toogleSidebar}
+                >
                     <IoIosMenu className="w-8 h-8 text-white" />
                 </div>
                 <form className="flex items-center">

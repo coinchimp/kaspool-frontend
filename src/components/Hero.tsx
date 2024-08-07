@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 const Hero = () => {
     const [walletAdd, setWalletAdd] = useState<string>('')
-    console.log(walletAdd)
     return (
         <div className="h-[90vh] bg-[#308274] text-white">
             <div className="px-8 max-w-2xl py-8">

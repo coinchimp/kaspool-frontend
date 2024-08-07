@@ -3,7 +3,7 @@ import MobileNav from '../components/MobileNav'
 const Rewards = () => {
     return (
         <div>
-            <MobileNav />
+            {/* <MobileNav /> */}
             <p>Rewards</p>
         </div>
     )

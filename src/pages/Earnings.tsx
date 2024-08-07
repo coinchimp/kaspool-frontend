@@ -3,7 +3,7 @@ import MobileNav from '../components/MobileNav'
 const Earnings = () => {
     return (
         <div>
-            <MobileNav />
+            {/* <MobileNav toogleSidebar={}/> */}
             <p>Earnings</p>
         </div>
     )
