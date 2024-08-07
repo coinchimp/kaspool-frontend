@@ -1,5 +1,12 @@
+import MobileNav from '../components/MobileNav'
+
 const Earnings = () => {
-    return <div>Earnings</div>
+    return (
+        <div>
+            <MobileNav />
+            <p>Earnings</p>
+        </div>
+    )
 }
 
 export default Earnings
