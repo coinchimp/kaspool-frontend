@@ -8,7 +8,7 @@ interface MobileNavProps {
 
 const MobileNav: React.FC<MobileNavProps> = ({ toogleSidebar }) => {
     return (
-        <div className="md:hidden h-[60px]">
+        <div className="md:hidden h-[60px] bg-white">
             <div className="flex items-center justify-between py-2 px-4">
                 <div
                     className="items-center justify-center rounded-md p-2 bg-[#77c2b6] flex"
