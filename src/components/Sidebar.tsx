@@ -12,7 +12,7 @@ const Sidebar = () => {
     const location = useLocation()
 
     return (
-        <div className="hidden md:block w-[25%] shadow-lg h-screen px-4">
+        <div className="hidden md:block w-[20%] shadow-lg h-screen px-4">
             {/* <div className="pt-4">
                 <p className="text-4xl text-[#77c2b6]">KasPOOL</p>
             </div> */}
