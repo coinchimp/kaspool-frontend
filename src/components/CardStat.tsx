@@ -2,20 +2,13 @@ import { Card } from '@tremor/react'
 import React, { ReactElement } from 'react'
 
 interface CardStatProps {
-    lastUpdated: boolean
     title: string
     data: string
-    time: string
+    footer: string
     icon: ReactElement
 }
 
-const CardStat: React.FC<CardStatProps> = ({
-    lastUpdated,
-    title,
-    data,
-    time,
-    icon,
-}) => {
+const CardStat: React.FC<CardStatProps> = ({ title, data, footer, icon }) => {
     return (
         <Card className="mx-auto rounded-md shadow-lg flex items-center">
             <div>
@@ -23,9 +16,7 @@ const CardStat: React.FC<CardStatProps> = ({
                 <p className="text-3xl font-extrabold text-[#308274] mt-1">
                     {data}
                 </p>
-                <p className={`${lastUpdated ? '' : 'text-white'} text-xs`}>
-                    Last updated: {time}
-                </p>
+                <p className={`text-xs text-slate-400`}>{footer}</p>
             </div>
             {icon}
         </Card>

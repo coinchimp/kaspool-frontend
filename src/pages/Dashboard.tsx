@@ -77,38 +77,34 @@ const Dashboard = () => {
                     <CardStat
                         title="Network Hashrate"
                         data="523 PH/s"
-                        time={'1 min ago'}
+                        footer={'Last updated: 1 min ago'}
                         icon={
                             <IoIosGlobe className="h-8 w-8 ml-auto font-semibold text-[#308274]" />
                         }
-                        lastUpdated={true}
                     />
                     <CardStat
                         title="Your Hashrate (48h)"
                         data="270 TH/s"
-                        time={'1 min ago'}
+                        footer={'Last updated: 1 min ago'}
                         icon={
                             <GiMining className="h-8 w-8 ml-auto font-semibold text-[#308274]" />
                         }
-                        lastUpdated={true}
                     />
                     <CardStat
                         title="Pool Hashrate"
                         data="2.3 PH/s"
-                        time={'1 min ago'}
+                        footer={'Last updated: 1 min ago'}
                         icon={
                             <FaUsers className="h-8 w-8 ml-auto font-semibold text-[#308274]" />
                         }
-                        lastUpdated={true}
                     />
                     <CardStat
                         title="Pending Balance"
                         data="380 KAS"
-                        time={'1 min ago'}
+                        footer={'Last updated: 1 min ago'}
                         icon={
                             <AiOutlineClockCircle className="h-8 w-8 ml-auto font-semibold text-[#308274]" />
                         }
-                        lastUpdated={true}
                     />
                 </div>
                 <div className="mt-4">
